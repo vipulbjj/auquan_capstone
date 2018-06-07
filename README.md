@@ -1,21 +1,21 @@
 # auquan_capstone
 
-##Auquan
-#Capstone Project
-#Prepared by Team Illuminati
+# Auquan
+# Capstone Project
+# Prepared by Team Illuminati
 Members- Vipul Bajaj, Saumya Shah
 
-#OVERVIEW & PURPOSE
+# OVERVIEW & PURPOSE
 
 The aim is to implement mean reversion trading strategy for most profitable 20 stocks handpicked from NSE using various data science techniques . 			
 
-#DATA SCRAPING
+# DATA SCRAPING
 
 We scraped data of 1 year(2017) for 110 stocks listed at the NSE  from their respective log files.
 The features that we extracted include StockVWAP. FutureVWAP, Ask Price, Bid Price, Total traded volume,Total traded size
 Stock data
 
-#IDENTIFY STOCKS (PROFITS)
+# IDENTIFY STOCKS (PROFITS)
 
 We checked the time frames over which stocks were mean-reverting. In particular, we checked for 2hr, 1 day, 5 days and 2 weeks.
 It was accomplished by calculating their Hurst value over different time frames.
@@ -26,14 +26,14 @@ Now we take mean over all the positive deviations and divide it by number of pos
 Now we consider every stock one by one manually looking at their Hurst exponent for respective time frames, avg profit, total profit, num_trades and select 20 which are expected to give good RoC when traded with our strategy.
 In the above process, we ignored some stocks with abnormally high profits by carefully scrutinizing their distributions and found the data having outliers.
 
-#ARIMA STRATEGY AND THRESHOLDS
+# ARIMA STRATEGY AND THRESHOLDS
 
 The ARIMA method was used to predict the future values of the stocks identified above.
 If the stock was mean reverting in, say, time T, then the future values of the stock were predicted for times in the range 2T - 3T.
 If the value of the stock was greater than (mean + threshold), then we sell that stock. If it is less than (mean - threshold), then we buy the stock.
 The mean was calculated as the mean of all the future predicted prices. The threshold was determined by considering different features. In the end, the standard deviation was found to be the most suitable feature.
 
-#ACKNOWLEDGEMENT
+# ACKNOWLEDGEMENT
 
 We would like to thank Auquan and Chandini Jain Ma’am for providing us with this great learning opportunity by giving  useful and informative resources during the training weeks. Also, we are grateful to them for providing support in every step of the project, through video calls and via emails. And we would like to work with Auquan in the coming future if feasible.
 
