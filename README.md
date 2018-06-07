@@ -1,8 +1,6 @@
-# auquan_capstone
-
 # Auquan
 # Capstone Project
-# Prepared by Team Illuminati
+Prepared by Team Illuminati
 Members- Vipul Bajaj, Saumya Shah
 
 # OVERVIEW & PURPOSE
@@ -18,7 +16,9 @@ Stock data
 # IDENTIFY STOCKS (PROFITS)
 
 We checked the time frames over which stocks were mean-reverting. In particular, we checked for 2hr, 1 day, 5 days and 2 weeks.
+
 It was accomplished by calculating their Hurst value over different time frames.
+
 We consider a particular stock to be mean-reverting over a certain time frame if its Hurst exponent was roughly below 0.5.
 Now for each time frame we calculate the mean value(StockVWAP) over 3 times the respective time frames for each stock assuming that to be the mean in the future.
 Next, we find the deviations of every stock from this mean. Deviation was taken to be StockVWAP-Brokerage(20p for buy+sell)-spread(Top Ask Price-Top Bid Price)-respective_mean.
