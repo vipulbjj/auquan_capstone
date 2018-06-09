@@ -1,8 +1,4 @@
-# Auquan
-# Capstone Project
-Prepared by Team Illuminati
-
-Members- Vipul Bajaj, Saumya Shah
+## Capstone Project
 
 # OVERVIEW & PURPOSE
 
@@ -43,7 +39,5 @@ If the value of the stock was greater than (mean + threshold), then we sell that
 
 The mean was calculated as the mean of all the future predicted prices. The threshold was determined by considering different features. In the end, the standard deviation was found to be the most suitable feature.
 
-# ACKNOWLEDGEMENT
 
-We would like to thank Auquan and Chandini Jain Ma’am for providing us with this great learning opportunity by giving  useful and informative resources during the training weeks. Also, we are grateful to them for providing support in every step of the project, through video calls and via emails. And we would like to work with Auquan in the coming future if feasible.
 
