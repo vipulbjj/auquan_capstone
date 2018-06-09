@@ -1,17 +1,17 @@
-## Capstone Project
+# Capstone Project
 
-# OVERVIEW & PURPOSE
+## OVERVIEW & PURPOSE
 
 The aim is to implement mean reversion trading strategy for most profitable 20 stocks handpicked from NSE using various data science techniques . 			
 
-# DATA SCRAPING
+## DATA SCRAPING
 
 We scraped data of 1 year(2017) for 110 stocks listed at the NSE  from their respective log files.
 
 The features that we extracted include StockVWAP. FutureVWAP, Ask Price, Bid Price, Total traded volume,Total traded size
 Stock data
 
-# IDENTIFY STOCKS (PROFITS)
+## IDENTIFY STOCKS (PROFITS)
 
 We checked the time frames over which stocks were mean-reverting. In particular, we checked for 2hr, 1 day, 5 days and 2 weeks.
 
@@ -29,7 +29,7 @@ Now we consider every stock one by one manually looking at their Hurst exponent 
 
 In the above process, we ignored some stocks with abnormally high profits by carefully scrutinizing their distributions and found the data having outliers.
 
-# ARIMA STRATEGY AND THRESHOLDS
+## ARIMA STRATEGY AND THRESHOLDS
 
 The ARIMA method was used to predict the future values of the stocks identified above.
 
